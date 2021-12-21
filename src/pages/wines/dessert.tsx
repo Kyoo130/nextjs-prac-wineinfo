@@ -17,7 +17,7 @@ const DessertWinePage: NextPage = () => {
         {data.map((wineData: Wine) => {
           return (
             <WineCard 
-              key={`port-wine-list-${wineData.id}`} 
+              key={`dessert-wine-list-${wineData.id}`} 
               wineData={wineData}
             />
           )

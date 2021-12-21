@@ -18,7 +18,7 @@ const StoutsPage: NextPage = () => {
       {data.map((beerData: Beer) => {
           return (
             <BeerCard 
-              key={`port-beer-list-${beerData.id}`} 
+              key={`stouts-beer-list-${beerData.id}`} 
               beerData={beerData}
             />
           )

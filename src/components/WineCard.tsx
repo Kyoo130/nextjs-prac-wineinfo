@@ -9,7 +9,7 @@ export const WineCard = ({ wineData }: WineProps) => {
 
   return (
     <div>
-      <h1>{wine}</h1>
+      <h2>{wine}</h2>
       <p>{winery}</p>
     </div>
   )
