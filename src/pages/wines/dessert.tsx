@@ -3,8 +3,8 @@ import { Error, Loading, WineCard } from "../../components";
 import { useWineData } from "../../hooks/useWineData";
 import { Wine } from "../../types/Wine";
 
-const WhitesWinePage: NextPage = () => {
-  const name = 'whites';
+const DessertWinePage: NextPage = () => {
+  const name = 'dessert';
   const { data, error } = useWineData(name)
 
   if(error) return <Error />
@@ -12,7 +12,7 @@ const WhitesWinePage: NextPage = () => {
 
   return (
     <div>
-      <h1>WhitesWinePage</h1>
+      <h1>DessertWinePage</h1>
       <main>
         {data.map((wineData: Wine) => {
           return (
@@ -27,4 +27,4 @@ const WhitesWinePage: NextPage = () => {
   )
 }
 
-export default WhitesWinePage;
+export default DessertWinePage;
